@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<GridPane xmlns:fx="http://javafx.com/fxml" fx:controller="StoreController" >
+    <Label text="Product" GridPane.columnIndex="0" GridPane.rowIndex="0"/>
+    <Text text="Sticky Tape"GridPane.columnIndex="1" GridPane.rowIndex="0"/>
+    
+    <Label text="Stock" GridPane.columnIndex="0" GridPane.rowIndex="1"/>
+    <Text fx:id="stockTxt" text="200 items"GridPane.columnIndex="1" GridPane.rowIndex="1"/>
+    
+    <Label text="Price" GridPane.columnIndex="0" GridPane.rowIndex="2"/>
+    <Text fx:id="priceTxt" text="$2.99"GridPane.columnIndex="1" GridPane.rowIndex="2"/>
+    
+    <Label text="Sell" GridPane.columnIndex="0" GridPane.rowIndex="3"/>
+    <TextField fx:id="amountTf" GridPane.columnIndex="1" GridPane.rowIndex="3"/>
+    <HBox alignment="CENTER_RIGHT"GridPane.columnIndex="1" GridPane.rowIndex="4">
+        <Button fx:id="sellBtn" text="Sell"/>
+    </HBox>
+    
+    <Label text="Cash" GridPane.columnIndex="0" GridPane.rowIndex="5"/>
+    <Text fx:id="cashTxt" text="$0.00"GridPane.columnIndex="1" GridPane.rowIndex="5"/>
+</GridPane>

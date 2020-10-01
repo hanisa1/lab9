@@ -1,0 +1,36 @@
+
+import javafx.application.Application;
+import javafx.fxml.FXMLLoader;
+import javafx.scene.*;
+import javafx.stage.Stage;
+
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+
+/**
+ *
+ * @author hanisamohamed
+ */
+public class StoreApplication extends Application {
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) { launch(args); }
+
+    @Override
+    public void start(Stage stage) throws Exception {
+        FXMLLoader loader = new FXMLLoader(getClass().getResource("store.fxml"));
+
+        // Add code here to load the root node from the FXML file
+        // and show it
+        Parent root = loader.load();
+        stage.setScene(new Scene(root));
+        stage.show();
+    }
+
+    
+    
+}
